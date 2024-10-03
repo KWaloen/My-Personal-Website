@@ -4,8 +4,10 @@ export default function IntroductionText() {
         <div className = "card">
         
             <h1 className = "text">
-                This is a page to distribute Farmor&apos;s belongings after she moved to the sykehjem.
+                This is a page to distribute Farmor&apos;s belongings amongst the family after she moved to the sykehjem.
             </h1>
+
+            
        
         </div>
     )

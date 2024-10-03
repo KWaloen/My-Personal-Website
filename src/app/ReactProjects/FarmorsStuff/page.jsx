@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import IntroText from "./IntroText"
+import ImageGrid from "./StuffImages"
 
 import Footer from "../../FrontPage/Footer"
 import Banner from "../../FrontPage/Banner"
@@ -13,7 +14,7 @@ export default function FarmorsStuff() {
             <NavBar />
             <Banner message = "Farmors Stuff" />
             <IntroText />
-                
+            <ImageGrid />
             <Footer />
         </div>
     )
