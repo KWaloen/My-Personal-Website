@@ -26,8 +26,10 @@ export default function Haskell_Is_Hard() {
     <div className="page">
       <NavBar />
 
-      This is a work in progress! 
-      In the meanwhile take a look at the backend available on my <Link className="link" href="https://github.com/KWaloen/Haskell_Is_Hard.AI">GitHub</Link>
+      This is a work in progress! 👷<br/>
+      In the meanwhile take a look at the backend available on my <Link className="link" target="_blank" href="https://github.com/KWaloen/Haskell_Is_Hard.AI">GitHub</Link>.<br/><br/>
+      I am working on beautifying the frontend and converting the backend to accept an HTTPS request instead of an HTTP request! 🚧
+      <br/><br/>
 
       <input
         type="text"
