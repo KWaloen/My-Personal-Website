@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import NavBar from "@/app/FrontPage/NavBar";
 import { useState } from "react";
 
@@ -24,6 +25,9 @@ export default function Haskell_Is_Hard() {
   return (
     <div className="page">
       <NavBar />
+
+      This is a work in progress! 
+      In the meanwhile take a look at the backend available on my <Link className="link" href="https://github.com/KWaloen/Haskell_Is_Hard.AI">GitHub</Link>
 
       <input
         type="text"
