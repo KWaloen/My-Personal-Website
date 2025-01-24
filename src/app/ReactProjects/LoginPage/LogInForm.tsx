@@ -25,7 +25,7 @@ export default function LogInForm(props: LoginFormProps) {
                 if (response.ok && username === process.env.NEXT_PUBLIC_SECRET_USER) {
                     alert('User login successful ' + process.env.NEXT_PUBLIC_CTF_FLAG);
                 } else if (response.ok) {
-                    alert('User login successful but no flag'); 
+                    alert('User login successful but no flag' + process.env.NEXT_PUBLIC_SECRET_USER); 
                     console.log(process.env.NEXT_PUBLIC_SECRET_USER)
                 } else {
                     alert('User login failed');
