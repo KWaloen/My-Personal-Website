@@ -1,5 +1,7 @@
 import { useState } from "react"
 
+require('dotenv').config()
+
 interface LoginFormProps {
     onSubmit: (newUser: string, newPassword: string) => void;
 }
@@ -21,7 +23,9 @@ export default function LogInForm(props: LoginFormProps) {
                 });
 
                 if (response.ok) {
-                    alert('User login succesful');
+                    alert('User login successful, but no flag');
+                } else if (response.ok && username === process.env.secretUser) {
+                    alert('User login successful' + process.env.ctfFlag); 
                 } else {
                     alert('User login failed');
                 }
