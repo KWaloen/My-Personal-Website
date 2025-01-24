@@ -21,6 +21,12 @@ export default async function handler(req, res) {
                 return res.status(401).json({message:'Login not successful'})
             } else if (existingUser && correctPassword) {
                 return res.status(200).json({message:'Login successful'})
+
+            //CTF test purposes
+            } else if (existingUser && correctPassword && existingUser == "testtesttesttest") {
+                return res.status(200).json({message:'Login successful flag={hereistheflag}'})
+            //
+            
             } else {
                 return res.status(401).json({message:'Login not successful'})
             }
