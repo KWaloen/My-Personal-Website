@@ -1,7 +1,5 @@
 import { useState } from "react"
 
-require('dotenv').config()
-
 interface LoginFormProps {
     onSubmit: (newUser: string, newPassword: string) => void;
 }
@@ -29,6 +27,7 @@ export default function LogInForm(props: LoginFormProps) {
                     console.log(process.env.NEXT_PUBLIC_SECRET_USER)
                 } else {
                     alert('User login failed');
+                    console.log(process.env.NEXT_PUBLIC_SECRET_USER)
                 }
             } catch (error) {
                 console.error('Error:', error);
