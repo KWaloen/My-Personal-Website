@@ -22,10 +22,10 @@ export default function LogInForm(props: LoginFormProps) {
                     body: JSON.stringify({ username, password }),
                 });
 
-                if (response.ok) {
-                    alert('User login successful, but no flag');
-                } else if (response.ok && username === process.env.SECRET_USER) {
-                    alert('User login successful' + process.env.CTF_FLAG); 
+                if (response.ok && username === process.env.SECRET_USER) {
+                    alert('User login successful' + process.env.CTF_FLAG);
+                } else if (response.ok) {
+                    alert('User login successful but no flag'); 
                 } else {
                     alert('User login failed');
                 }
