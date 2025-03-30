@@ -6,6 +6,7 @@ import Footer from './FrontPage/Footer';
 import NavBar from './FrontPage/NavBar';
 import BlinkingUnderscore from './FrontPage/BlinkingUnderscore';
 import Link from 'next/link';
+import Current_Projects from './CurrentProject/CurrentProject';
 
 
 
@@ -25,6 +26,8 @@ export default function Home() {
         </div>
 
         <Introduction/>
+
+        <Current_Projects/>
         
         <React_Projects/>
         
