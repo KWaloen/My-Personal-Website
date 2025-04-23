@@ -9,7 +9,7 @@ export default function Current_Projects() {
                 <h2>
                     
                     <ul>
-                        <Link className="link" href="https://ecmascript-proposals.vercel.app" target="_blank"> ECMAScript Evolution Project</Link>
+                        <Link className="link" href="https://js-proposals.vercel.app/" target="_blank"> JavaScript Proposals Project</Link>
                     </ul>
                 
                 </h2>
