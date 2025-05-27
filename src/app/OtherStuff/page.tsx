@@ -14,10 +14,6 @@ export default function OtherStuff() {
                 I plan to write things like a list of my favorite movies/series and games as well as my favorite recipes.
             </p>
 
-            <div className="card">
-                <Link className="link" href="/OtherStuff/CV"> 📝 Kai&apos;s CV 💼</Link>
-            </div>
-
             <Footer/>
         </div>
     )
