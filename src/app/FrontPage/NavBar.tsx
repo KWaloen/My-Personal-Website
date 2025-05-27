@@ -14,7 +14,6 @@ export default function NavBar() {
             <Link className="link" href="/JavaProjects/BugShooter"> 🐜 BugShooter 🐜 </Link>
             <Link className="link" href="/JavaProjects/RodentReboot"> 🐀 Rodent Reboot 🐀</Link>
             <Link className="link" href="/ReactProjects/Haskell_Is_Hard">Haskell_Is_Hard.AI </Link>
-            <Link className="link" href="/OtherStuff/CV"> 📝 Kai&apos;s CV 💼 </Link>
           </div>
       </div>
 
