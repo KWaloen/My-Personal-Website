@@ -10,7 +10,7 @@ export default function Haskell_Is_Hard() {
 
   const sendMessage = async () => {
     try {
-      const response = await fetch("https://hih.server.kwal.no/api/chat/", {
+      const response = await fetch("http://hih.server.kwal.no/api/chat/", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ "user message": message }),
