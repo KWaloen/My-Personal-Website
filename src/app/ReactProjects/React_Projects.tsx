@@ -19,6 +19,9 @@ export default function React_Projects() {
                     <ul>
                         <Link className="link" href="/ReactProjects/Haskell_Is_Hard">👷 Haskell Is Hard Chatbot 👷</Link>
                     </ul>
+                    <ul>
+                        <Link className="link" href="/ReactProjects/Java_Is_Great">👷 Java Is Great Chatbot 👷</Link>
+                    </ul>
                 </h2>
 
             </div>
