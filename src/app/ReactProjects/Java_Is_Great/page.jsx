@@ -14,12 +14,23 @@ export default function ChatPage() {
     setMessages((m) => [...m, { from: "user", text: input }]);
     setInput("");
     try {
+
+      const payload = {
+        messages: [
+          ...messages.map(m => ({
+            role: m.from === "user" ? "user" : "assistant",
+            content: m.text,
+          })),
+          { role: "user", content: input },
+        ],
+      };
+
       const res = await fetch("https://jig.server.kwal.no/api/chat/", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ "user message": input }),
+        body: JSON.stringify(payload),
       });
-      const data = await res.json();
+      const { response } = await res.json();
       setMessages((m) => [...m, { from: "bot", text: data.response }]);
     } catch {
       setMessages((m) => [
