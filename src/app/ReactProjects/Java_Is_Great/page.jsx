@@ -13,7 +13,7 @@ export default function ChatPage() {
     if (!input.trim()) return;
     setMessages((m) => [...m, { from: "user", text: input }]);
     setInput("");
-    try {
+   
 
       const payload = {
         messages: [
@@ -31,14 +31,9 @@ export default function ChatPage() {
         body: JSON.stringify(payload),
       });
       const { response } = await res.json();
-      const data = await res.json();
-      setMessages((m) => [...m, { from: "bot", text: data.response }]);
-    } catch {
-      setMessages((m) => [
-        ...m,
-        { from: "bot", text: "⚠️ Error communicating with API" },
-      ]);
-    }
+      setMessages((m) => [...m, { from: "bot", text: response }]);
+     
+    
   };
 
   useEffect(() => {
